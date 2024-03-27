@@ -3,5 +3,5 @@ WORKDIR rafal-alzaid
 ADD heart.py /rafal-alzaid
 RUN chmod +x /rafal-alzaid/heart.py
 RUN apk add --no-cache python3 py3-pip
-CMD ./heart.py
+CMD ["python", "./heart.py"]
 
